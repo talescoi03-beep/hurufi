@@ -1,0 +1,247 @@
+/* حروفي — تصميم لكبار السن: خط كبير، أزرار كبيرة، تباين عالٍ، بدون ازدحام */
+:root {
+  --bg: #FFFBF2;
+  --card: #FFFFFF;
+  --ink: #1B1B1B;
+  --muted: #555049;
+  --line: #E4DDCD;
+  --ok: #1E8E3E;
+  --ok-bg: #DDF5E3;
+  --bad: #C25E00;       /* برتقالي هادئ بدل الأحمر */
+  --bad-bg: #FFEBD2;
+  --primary: #1565C0;
+  --locked: #B9B4AA;
+  --course: #1E7B45;
+  --radius: 22px;
+  --app-h: 100dvh;
+  --ui-font: system-ui, "Noto Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  --target-font: "Noto Naskh Arabic", "Noto Sans Arabic", serif;
+  --quran-font: "Amiri Quran", "Noto Naskh Arabic", serif;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); }
+body { font-family: var(--ui-font); font-size: 28px; line-height: 1.5; overscroll-behavior: none; }
+button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulation; }
+button:disabled { cursor: default; }
+button:focus-visible, input:focus-visible { outline: 4px solid var(--primary); outline-offset: 3px; }
+[hidden] { display: none !important; }
+
+#app { height: var(--app-h); display: flex; flex-direction: column; overflow: hidden; }
+.target { font-family: var(--target-font); }
+.quran { font-family: var(--quran-font); }
+
+/* ---------------------------------------------------------------- عام */
+.btn {
+  min-height: 64px; padding: 10px 28px; border: 0; border-radius: var(--radius);
+  background: var(--primary); color: #fff; font-weight: 700; font-size: 30px;
+  box-shadow: 0 5px 0 rgba(0,0,0,.25);
+}
+.btn:active { transform: translateY(3px); box-shadow: 0 2px 0 rgba(0,0,0,.25); }
+.btn.small { min-height: 64px; font-size: 24px; padding: 8px 18px; background: #fff; color: var(--ink); border: 3px solid var(--line); box-shadow: none; }
+.icon-btn {
+  min-width: 64px; min-height: 64px; border: 0; border-radius: 50%;
+  background: transparent; font-size: 36px; font-weight: 700; color: var(--muted);
+}
+
+.top {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 8px 14px; border-bottom: 3px solid var(--line); background: var(--card); flex: none;
+}
+.logo { font-weight: 800; font-size: 30px; }
+.stats { display: flex; gap: 18px; font-weight: 800; }
+.stat { font-size: 28px; }
+
+/* ---------------------------------------------------------------- البداية */
+.splash { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; }
+.splash-logo { font-size: 110px; }
+.splash h1 { margin: 0; font-size: 56px; }
+.splash .start { font-size: 40px; min-height: 96px; padding: 10px 60px; background: var(--course); }
+.error { text-align: center; color: var(--bad); }
+
+/* ---------------------------------------------------------------- اختيار المادة */
+.home { flex: 1; overflow-y: auto; padding: 18px 16px 30px; }
+.instr {
+  display: flex; align-items: center; gap: 14px; width: 100%;
+  border: 0; background: none; padding: 0; text-align: right;
+}
+.speak-btn {
+  flex: none; display: inline-grid; place-items: center;
+  width: 72px; height: 72px; border-radius: 50%; border: 0;
+  background: var(--primary); color: #fff; font-size: 36px;
+  box-shadow: 0 4px 0 rgba(0,0,0,.25);
+}
+.instr-text { font-size: 30px; font-weight: 700; }
+.course-list { display: grid; gap: 18px; margin-top: 22px; }
+.course-card {
+  display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; align-items: center;
+  gap: 6px 18px; padding: 18px 20px; min-height: 120px;
+  border: 4px solid var(--course); border-radius: 28px; background: var(--card);
+  box-shadow: 0 6px 0 var(--course); text-align: right;
+}
+.course-card:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--course); }
+.course-emoji { grid-row: span 2; font-size: 72px; line-height: 1; }
+.course-title { font-size: 36px; font-weight: 800; color: var(--course); }
+.course-title small { display: block; font-size: 24px; color: var(--muted); font-weight: 600; }
+.course-progress { height: 14px; border-radius: 7px; background: #EEE8DA; overflow: hidden; }
+.course-progress span { display: block; height: 100%; background: var(--course); border-radius: 7px; }
+
+/* ---------------------------------------------------------------- المسار */
+.path { flex: 1; overflow-y: auto; padding: 10px 16px 40px; }
+.path-title { text-align: center; color: var(--course); margin: 10px 0 4px; font-size: 40px; }
+.unit { margin: 22px 0 10px; }
+.unit-head {
+  display: flex; align-items: center; gap: 14px; width: 100%; min-height: 84px;
+  padding: 12px 18px; border: 0; border-radius: var(--radius);
+  background: var(--course); color: #fff; text-align: right; font-size: 32px; font-weight: 800;
+}
+.unit-head small { display: block; font-size: 22px; font-weight: 600; opacity: .9; }
+.unit-emoji { font-size: 44px; }
+.unit.locked .unit-head { background: var(--locked); }
+.nodes { display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 24px 0 8px; }
+.node-wrap { position: relative; transform: translateX(var(--off)); display: flex; flex-direction: column; align-items: center; }
+.node {
+  width: 104px; height: 104px; border-radius: 50%; border: 0;
+  background: var(--course); color: #fff; font-size: 40px; font-weight: 800;
+  box-shadow: 0 8px 0 rgba(0,0,0,.28);
+}
+.node:active { transform: translateY(5px); box-shadow: 0 3px 0 rgba(0,0,0,.28); }
+.node.done { background: #F5B800; color: #3D2B00; }
+.node.locked { background: var(--locked); box-shadow: 0 8px 0 #9C978D; }
+.node.current { outline: 6px solid color-mix(in srgb, var(--course) 35%, transparent); outline-offset: 6px; animation: pulse 1.6s infinite; }
+.node-emoji { display: block; line-height: 1; }
+.node-stars { color: #E0A300; font-size: 26px; letter-spacing: 2px; margin-top: 6px; }
+.start-flag {
+  position: absolute; top: -46px; padding: 2px 16px; border-radius: 14px;
+  background: var(--card); border: 3px solid var(--course); color: var(--course); font-weight: 800; font-size: 22px;
+}
+@keyframes pulse { 50% { outline-offset: 12px; } }
+.sources { margin-top: 30px; text-align: center; color: var(--muted); font-size: 20px; }
+.sources p { margin: 6px 0; }
+
+/* ---------------------------------------------------------------- الدرس */
+.lesson { height: 100%; display: flex; flex-direction: column; }
+.lesson-top { display: flex; align-items: center; gap: 10px; padding: 6px 12px; flex: none; }
+.bar { flex: 1; height: 22px; border-radius: 11px; background: #EAE3D3; overflow: hidden; }
+.bar-fill { height: 100%; width: 0; background: var(--ok); border-radius: 11px; transition: width .4s; }
+.review-badge { font-size: 32px; }
+
+.q-body {
+  flex: 1; min-height: 0; overflow-y: auto; padding: 6px 16px 10px;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.q-body.nudge { animation: nudge .4s; }
+@keyframes nudge { 25% { transform: translateX(-10px); } 75% { transform: translateX(10px); } }
+.visual { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; min-height: 0; }
+.big-emoji { font-size: 96px; line-height: 1.1; }
+.big-emoji.huge { font-size: 140px; }
+.big-emoji.small { font-size: 64px; }
+.big-target { font-size: 88px; line-height: 1.4; font-weight: 700; text-align: center; }
+.quran.big-target { font-size: 72px; font-weight: 400; }
+.spaced { display: flex; gap: 16px; font-size: 64px; font-weight: 700; flex-wrap: wrap; justify-content: center; }
+.spaced .blank {
+  min-width: 70px; text-align: center; color: var(--primary);
+  border-bottom: 6px solid var(--primary); animation: blink 1.2s infinite;
+}
+.spaced .gap { width: 24px; }
+@keyframes blink { 50% { opacity: .35; } }
+.listen-big {
+  width: 180px; height: 180px; border-radius: 50%; border: 0;
+  background: var(--primary); color: #fff; font-size: 90px; box-shadow: 0 8px 0 rgba(0,0,0,.25);
+}
+.lesson-hint { margin: 0; font-size: 22px; color: var(--muted); text-align: center; }
+
+/* اختيار من أربعة */
+.choices { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-content: center; }
+.choice {
+  min-height: 130px; border: 4px solid var(--line); border-radius: var(--radius);
+  background: var(--card); font-size: 76px; box-shadow: 0 6px 0 var(--line);
+}
+.choices.text .choice { font-size: 52px; font-weight: 700; }
+.choice.right { border-color: var(--ok); background: var(--ok-bg); box-shadow: 0 6px 0 var(--ok); }
+.choice.wrong { border-color: var(--bad); background: var(--bad-bg); box-shadow: 0 6px 0 var(--bad); }
+
+/* ترتيب الحروف */
+.visual.compact { justify-content: flex-start; }
+.arrange-preview { min-height: 90px; font-size: 64px; font-weight: 700; color: var(--primary); }
+.tiles { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.answer-tiles { min-height: 84px; width: 100%; padding: 8px; border-bottom: 4px dashed var(--line); }
+.tile {
+  min-width: 72px; min-height: 72px; padding: 0 16px; border: 3px solid var(--line); border-radius: 18px;
+  background: var(--card); font-size: 46px; font-weight: 700; box-shadow: 0 5px 0 var(--line);
+}
+.tile:disabled { opacity: .15; box-shadow: none; }
+.tile.placed { border-color: var(--primary); }
+
+/* الآيات */
+.ayah-card { flex: 1; display: flex; flex-direction: column; gap: 12px; align-items: center; justify-content: center; }
+.ayah-name { font-size: 22px; color: var(--muted); }
+.ayah { font-size: 46px; line-height: 2; text-align: center; padding: 10px 14px; background: var(--card); border-radius: var(--radius); border: 3px solid var(--line); }
+.ayah span { padding: 0 4px; border-radius: 12px; }
+.ayah .past { color: var(--ok); }
+.ayah .cur { background: #FFF1B8; outline: 3px solid #E0A300; }
+.ayah .cur.done-ok { background: var(--ok-bg); outline-color: var(--ok); }
+.ayah .cur.done-bad { background: var(--bad-bg); outline-color: var(--bad); }
+.ayah-tools { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+.hint { font-size: 56px; font-weight: 700; color: var(--primary); }
+
+.interstitial { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.inter-text { font-size: 38px; font-weight: 800; margin: 0; }
+
+/* الشريط السفلي: حقل الكتابة والزر */
+.q-foot {
+  flex: none; display: flex; flex-direction: column; gap: 10px;
+  padding: 10px 16px calc(12px + env(safe-area-inset-bottom));
+  border-top: 3px solid var(--line); background: var(--card); transition: background .2s;
+}
+.q-foot .main-btn { width: 100%; min-height: 72px; font-size: 34px; }
+.q-foot.ok { background: var(--ok-bg); border-color: var(--ok); }
+.q-foot.ok .main-btn { background: var(--ok); }
+.q-foot.bad { background: var(--bad-bg); border-color: var(--bad); }
+.q-foot.bad .main-btn { background: var(--bad); }
+.answer {
+  width: 100%; min-height: 84px; padding: 6px 18px;
+  font-size: 52px; font-weight: 700; text-align: center;
+  border: 4px solid var(--primary); border-radius: var(--radius); background: #fff; color: var(--ink);
+}
+.q-foot.ok .answer { border-color: var(--ok); }
+.q-foot.bad .answer { border-color: var(--bad); }
+.feedback { text-align: center; }
+.fb-title { font-size: 32px; font-weight: 800; }
+.q-foot.ok .fb-title { color: var(--ok); font-size: 40px; }
+.q-foot.bad .fb-title { color: var(--bad); }
+.fb-answer { font-size: 60px; font-weight: 700; color: var(--ink); line-height: 1.3; }
+.fb-answer.quran { font-weight: 400; }
+.fb-emoji { margin-left: 12px; font-size: 52px; }
+
+/* عندما يكون الكيبورد مفتوحاً: نصغّر الصور حتى يبقى السؤال ظاهراً */
+.kb-open .lesson-top { padding-block: 2px; }
+.kb-open .speak-btn { width: 56px; height: 56px; font-size: 28px; }
+.kb-open .instr-text { font-size: 24px; }
+.kb-open .big-emoji { font-size: 60px; }
+.kb-open .big-emoji.huge { font-size: 84px; }
+.kb-open .big-target { font-size: 64px; line-height: 1.2; }
+.kb-open .spaced { font-size: 48px; }
+.kb-open .listen-big { width: 110px; height: 110px; font-size: 54px; }
+.kb-open .ayah { font-size: 34px; line-height: 1.8; }
+.kb-open .ayah-name, .kb-open .lesson-hint { display: none; }
+.kb-open .answer { min-height: 68px; font-size: 44px; }
+.kb-open .q-foot .main-btn { min-height: 64px; font-size: 30px; }
+.kb-open .fb-answer { font-size: 46px; }
+
+/* ---------------------------------------------------------------- الاحتفال */
+.celebrate { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; position: relative; overflow: hidden; padding: 20px; }
+.cele-emoji { font-size: 130px; animation: pop .6s ease-out; }
+.cele-stars { font-size: 76px; color: #DDD6C6; letter-spacing: 8px; }
+.cele-stars .on { color: #F5B800; display: inline-block; animation: pop .5s ease-out both; }
+.cele-stars .on:nth-child(2) { animation-delay: .2s; }
+.cele-stars .on:nth-child(3) { animation-delay: .4s; }
+.cele-text { font-size: 52px; font-weight: 800; margin: 0; color: var(--course); }
+.cele-points { font-size: 34px; font-weight: 700; margin: 0; }
+.celebrate .main-btn { margin-top: 20px; width: min(100%, 420px); background: var(--course); }
+.confetti span { position: absolute; top: -60px; left: var(--x); font-size: 40px; animation: fall var(--d) var(--t) ease-in forwards; }
+@keyframes fall { to { transform: translateY(110vh) rotate(540deg); } }
+@keyframes pop { 0% { transform: scale(0); } 70% { transform: scale(1.2); } 100% { transform: scale(1); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

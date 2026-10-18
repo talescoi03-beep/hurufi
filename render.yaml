@@ -1,0 +1,15 @@
+# إعداد Render (اختياري) — يمكنك بدلاً منه إدخال الإعدادات يدوياً كما في README
+services:
+  - type: web
+    name: hurufi
+    runtime: static
+    buildCommand: echo "no build needed"
+    staticPublishPath: ./public
+    headers:
+      # حتى يصل تحديث Service Worker للمستخدمين فوراً
+      - path: /sw.js
+        name: Cache-Control
+        value: no-cache
+      - path: /data/*
+        name: Cache-Control
+        value: no-cache

@@ -1,0 +1,273 @@
+{
+  "id": "quran",
+  "title": "القرآن الكريم",
+  "emoji": "📖",
+  "color": "#0B5E55",
+  "lang": "ar",
+  "font": "quran",
+  "textFile": "data/quran-text.json",
+  "textSource": "نص القرآن: مشروع Tanzil (tanzil.net) — الرسم العثماني والإملائي، ترخيص CC BY 3.0",
+  "ayahAudio": "https://everyayah.com/data/Alafasy_64kbps/{s3}{a3}.mp3",
+  "wordAudio": "https://audio.qurancdn.com/wbw/{s3}_{a3}_{w3}.mp3",
+  "audioSource": "التلاوة: الشيخ مشاري العفاسي من everyayah.com — صوت الكلمات: quran.com",
+  "units": [
+    {
+      "id": "u1",
+      "title": "الحروف",
+      "emoji": "أ",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "ا ب ت ث ج ح خ د ذ ر",
+          "emoji": "ب",
+          "mode": "loose",
+          "types": ["letter", "letter", "choose", "listen_write"],
+          "items": [
+            {
+              "text": "أ",
+              "say": "ألف",
+              "accept": ["ا"]
+            },
+            {"text": "ب", "say": "باء"},
+            {"text": "ت", "say": "تاء"},
+            {"text": "ث", "say": "ثاء"},
+            {"text": "ج", "say": "جيم"},
+            {"text": "ح", "say": "حاء"},
+            {"text": "خ", "say": "خاء"},
+            {"text": "د", "say": "دال"},
+            {"text": "ذ", "say": "ذال"},
+            {"text": "ر", "say": "راء"}
+          ]
+        },
+        {
+          "id": "l2",
+          "title": "ز س ش ص ض ط ظ ع غ",
+          "emoji": "ص",
+          "mode": "loose",
+          "types": ["letter", "letter", "choose", "listen_write"],
+          "items": [
+            {"text": "ز", "say": "زاي"},
+            {"text": "س", "say": "سين"},
+            {"text": "ش", "say": "شين"},
+            {"text": "ص", "say": "صاد"},
+            {"text": "ض", "say": "ضاد"},
+            {"text": "ط", "say": "طاء"},
+            {"text": "ظ", "say": "ظاء"},
+            {"text": "ع", "say": "عين"},
+            {"text": "غ", "say": "غين"}
+          ]
+        },
+        {
+          "id": "l3",
+          "title": "ف ق ك ل م ن ه و ي",
+          "emoji": "ق",
+          "mode": "loose",
+          "types": ["letter", "letter", "choose", "listen_write"],
+          "items": [
+            {"text": "ف", "say": "فاء"},
+            {"text": "ق", "say": "قاف"},
+            {"text": "ك", "say": "كاف"},
+            {"text": "ل", "say": "لام"},
+            {"text": "م", "say": "ميم"},
+            {"text": "ن", "say": "نون"},
+            {"text": "ه", "say": "هاء"},
+            {"text": "و", "say": "واو"},
+            {"text": "ي", "say": "ياء"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "الحركات",
+      "emoji": "◌َ",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "الفتحة",
+          "emoji": "بَ",
+          "mode": "harakat",
+          "types": ["letter", "choose", "letter", "listen_write"],
+          "hint": "الفتحة: اضغط مطوّلاً على الحرف أو على زر التشكيل في الكيبورد",
+          "items": [
+            {"text": "بَ", "say": "باءٌ فتحة، بَ"},
+            {"text": "تَ", "say": "تاءٌ فتحة، تَ"},
+            {"text": "دَ", "say": "دالٌ فتحة، دَ"},
+            {"text": "رَ", "say": "راءٌ فتحة، رَ"},
+            {"text": "سَ", "say": "سينٌ فتحة، سَ"},
+            {"text": "مَ", "say": "ميمٌ فتحة، مَ"},
+            {"text": "نَ", "say": "نونٌ فتحة، نَ"},
+            {"text": "لَ", "say": "لامٌ فتحة، لَ"}
+          ]
+        },
+        {
+          "id": "l2",
+          "title": "الضمة والكسرة",
+          "emoji": "بُ",
+          "mode": "harakat",
+          "types": ["letter", "choose", "letter", "listen_write"],
+          "items": [
+            {"text": "بُ", "say": "باءٌ ضمة، بُ"},
+            {"text": "بِ", "say": "باءٌ كسرة، بِ"},
+            {"text": "تُ", "say": "تاءٌ ضمة، تُ"},
+            {"text": "تِ", "say": "تاءٌ كسرة، تِ"},
+            {"text": "مُ", "say": "ميمٌ ضمة، مُ"},
+            {"text": "مِ", "say": "ميمٌ كسرة، مِ"},
+            {"text": "نُ", "say": "نونٌ ضمة، نُ"},
+            {"text": "نِ", "say": "نونٌ كسرة، نِ"}
+          ]
+        },
+        {
+          "id": "l3",
+          "title": "السكون",
+          "emoji": "قُلْ",
+          "mode": "harakat",
+          "types": ["letter", "choose", "letter", "listen_write"],
+          "items": [
+            {"text": "قُلْ", "say": "قُلْ"},
+            {"text": "لَمْ", "say": "لَمْ"},
+            {"text": "مِنْ", "say": "مِنْ"},
+            {"text": "عَنْ", "say": "عَنْ"},
+            {"text": "هَلْ", "say": "هَلْ"},
+            {"text": "بَلْ", "say": "بَلْ"},
+            {"text": "أَنْ", "say": "أَنْ"}
+          ]
+        },
+        {
+          "id": "l4",
+          "title": "التنوين",
+          "emoji": "بٌ",
+          "mode": "harakat",
+          "types": ["letter", "choose", "letter", "listen_write"],
+          "items": [
+            {"text": "بٌ", "say": "باءٌ تنوين ضم، بٌ"},
+            {"text": "بٍ", "say": "باءٌ تنوين كسر، بٍ"},
+            {
+              "text": "بًا",
+              "say": "باءٌ تنوين فتح، بًا",
+              "accept": ["باً"]
+            },
+            {"text": "نٌ", "say": "نونٌ تنوين ضم، نٌ"},
+            {"text": "نٍ", "say": "نونٌ تنوين كسر، نٍ"},
+            {
+              "text": "دًا",
+              "say": "دالٌ تنوين فتح، دًا",
+              "accept": ["داً"]
+            },
+            {"text": "مٌ", "say": "ميمٌ تنوين ضم، مٌ"}
+          ]
+        },
+        {
+          "id": "l5",
+          "title": "الشدّة",
+          "emoji": "رَبَّ",
+          "mode": "harakat",
+          "types": ["letter", "choose", "letter", "listen_write"],
+          "items": [
+            {"text": "رَبَّ", "say": "رَبَّ"},
+            {"text": "إِنَّ", "say": "إِنَّ"},
+            {"text": "ثُمَّ", "say": "ثُمَّ"},
+            {"text": "كُلَّ", "say": "كُلَّ"},
+            {"text": "أُمَّ", "say": "أُمَّ"},
+            {"text": "لَمَّا", "say": "لَمَّا"},
+            {"text": "حَقَّ", "say": "حَقَّ"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "كلمات من الفاتحة",
+      "emoji": "📖",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "بسم الله… الحمد لله",
+          "emoji": "🤲",
+          "mode": "strict",
+          "types": ["copy", "choose", "complete", "listen_write"],
+          "words": ["1:1:1", "1:1:2", "1:1:3", "1:1:4", "1:2:1", "1:2:2", "1:2:3", "1:2:4"]
+        },
+        {
+          "id": "l2",
+          "title": "مالك يوم الدين",
+          "emoji": "📖",
+          "mode": "strict",
+          "types": ["copy", "choose", "complete", "listen_write"],
+          "words": ["1:4:1", "1:4:2", "1:4:3", "1:5:1", "1:5:2", "1:5:4", "1:6:1", "1:6:2"]
+        },
+        {
+          "id": "l3",
+          "title": "صراط الذين…",
+          "emoji": "🌙",
+          "mode": "strict",
+          "types": ["copy", "complete", "choose", "listen_write"],
+          "words": ["1:6:3", "1:7:1", "1:7:2", "1:7:3", "1:7:4", "1:7:5", "1:7:6", "1:7:9"]
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": "آيات قصيرة",
+      "emoji": "🕌",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "الفاتحة ١–٢",
+          "emoji": "١",
+          "mode": "strict",
+          "ayat": {"surah": 1, "from": 1, "to": 2}
+        },
+        {
+          "id": "l2",
+          "title": "الفاتحة ٣–٥",
+          "emoji": "٢",
+          "mode": "strict",
+          "ayat": {"surah": 1, "from": 3, "to": 5}
+        },
+        {
+          "id": "l3",
+          "title": "الفاتحة ٦–٧",
+          "emoji": "٣",
+          "mode": "strict",
+          "ayat": {"surah": 1, "from": 6, "to": 7}
+        },
+        {
+          "id": "l4",
+          "title": "الإخلاص ١–٢",
+          "emoji": "٤",
+          "mode": "strict",
+          "ayat": {"surah": 112, "from": 1, "to": 2}
+        },
+        {
+          "id": "l5",
+          "title": "الإخلاص ٣–٤",
+          "emoji": "٥",
+          "mode": "strict",
+          "ayat": {"surah": 112, "from": 3, "to": 4}
+        },
+        {
+          "id": "l6",
+          "title": "الكوثر",
+          "emoji": "٦",
+          "mode": "strict",
+          "ayat": {"surah": 108, "from": 1, "to": 3}
+        },
+        {
+          "id": "l7",
+          "title": "العصر ١–٢",
+          "emoji": "٧",
+          "mode": "strict",
+          "ayat": {"surah": 103, "from": 1, "to": 2}
+        },
+        {
+          "id": "l8",
+          "title": "العصر ٣",
+          "emoji": "٨",
+          "mode": "strict",
+          "ayat": {"surah": 103, "from": 3, "to": 3}
+        }
+      ]
+    }
+  ]
+}

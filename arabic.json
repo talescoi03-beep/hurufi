@@ -1,0 +1,258 @@
+{
+  "id": "arabic",
+  "title": "العربية",
+  "emoji": "🔤",
+  "color": "#1E7B45",
+  "lang": "ar",
+  "units": [
+    {
+      "id": "u1",
+      "title": "الحروف",
+      "emoji": "🔤",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "أ ب ت ث ج ح خ",
+          "emoji": "أ",
+          "mode": "loose",
+          "types": ["letter", "letter", "choose", "listen_write"],
+          "items": [
+            {
+              "text": "أ",
+              "say": "ألف",
+              "accept": ["ا"]
+            },
+            {"text": "ب", "say": "باء"},
+            {"text": "ت", "say": "تاء"},
+            {"text": "ث", "say": "ثاء"},
+            {"text": "ج", "say": "جيم"},
+            {"text": "ح", "say": "حاء"},
+            {"text": "خ", "say": "خاء"}
+          ]
+        },
+        {
+          "id": "l2",
+          "title": "د ذ ر ز س ش ص",
+          "emoji": "د",
+          "mode": "loose",
+          "types": ["letter", "letter", "choose", "listen_write"],
+          "items": [
+            {"text": "د", "say": "دال"},
+            {"text": "ذ", "say": "ذال"},
+            {"text": "ر", "say": "راء"},
+            {"text": "ز", "say": "زاي"},
+            {"text": "س", "say": "سين"},
+            {"text": "ش", "say": "شين"},
+            {"text": "ص", "say": "صاد"}
+          ]
+        },
+        {
+          "id": "l3",
+          "title": "ض ط ظ ع غ ف ق",
+          "emoji": "ض",
+          "mode": "loose",
+          "types": ["letter", "letter", "choose", "listen_write"],
+          "items": [
+            {"text": "ض", "say": "ضاد"},
+            {"text": "ط", "say": "طاء"},
+            {"text": "ظ", "say": "ظاء"},
+            {"text": "ع", "say": "عين"},
+            {"text": "غ", "say": "غين"},
+            {"text": "ف", "say": "فاء"},
+            {"text": "ق", "say": "قاف"}
+          ]
+        },
+        {
+          "id": "l4",
+          "title": "ك ل م ن ه و ي",
+          "emoji": "ك",
+          "mode": "loose",
+          "types": ["letter", "letter", "choose", "listen_write"],
+          "items": [
+            {"text": "ك", "say": "كاف"},
+            {"text": "ل", "say": "لام"},
+            {"text": "م", "say": "ميم"},
+            {"text": "ن", "say": "نون"},
+            {"text": "ه", "say": "هاء"},
+            {"text": "و", "say": "واو"},
+            {"text": "ي", "say": "ياء"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "كلمات قصيرة",
+      "emoji": "🐱",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "حيوانات",
+          "emoji": "🐱",
+          "mode": "loose",
+          "types": ["copy", "choose", "copy", "complete"],
+          "items": [
+            {"text": "قط", "emoji": "🐱"},
+            {"text": "أسد", "emoji": "🦁"},
+            {"text": "نمر", "emoji": "🐯"},
+            {"text": "فيل", "emoji": "🐘"},
+            {"text": "كلب", "emoji": "🐕"},
+            {"text": "ديك", "emoji": "🐓"}
+          ]
+        },
+        {
+          "id": "l2",
+          "title": "البيت والطبيعة",
+          "emoji": "🏠",
+          "mode": "loose",
+          "types": ["copy", "complete", "choose", "arrange"],
+          "items": [
+            {"text": "باب", "emoji": "🚪"},
+            {"text": "بيت", "emoji": "🏠"},
+            {"text": "شمس", "emoji": "☀️"},
+            {"text": "قمر", "emoji": "🌙"},
+            {"text": "نار", "emoji": "🔥"},
+            {"text": "ماء", "emoji": "💧"},
+            {"text": "ورد", "emoji": "🌹"}
+          ]
+        },
+        {
+          "id": "l3",
+          "title": "الجسم",
+          "emoji": "✋",
+          "mode": "loose",
+          "types": ["copy", "complete", "see_write", "choose", "arrange"],
+          "items": [
+            {"text": "يد", "emoji": "✋"},
+            {"text": "عين", "emoji": "👁️"},
+            {"text": "أنف", "emoji": "👃"},
+            {"text": "فم", "emoji": "👄"},
+            {"text": "أذن", "emoji": "👂"},
+            {"text": "سن", "emoji": "🦷"}
+          ]
+        },
+        {
+          "id": "l4",
+          "title": "طعام",
+          "emoji": "🍞",
+          "mode": "loose",
+          "types": ["see_write", "complete", "choose", "arrange", "listen_write"],
+          "items": [
+            {"text": "خبز", "emoji": "🍞"},
+            {"text": "موز", "emoji": "🍌"},
+            {"text": "عنب", "emoji": "🍇"},
+            {"text": "سمك", "emoji": "🐟"},
+            {"text": "بيض", "emoji": "🥚"},
+            {"text": "حليب", "emoji": "🥛"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "كلمات أطول",
+      "emoji": "🍊",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "فواكه وخضار",
+          "emoji": "🍊",
+          "mode": "loose",
+          "types": ["copy", "complete", "choose", "arrange", "see_write"],
+          "items": [
+            {"text": "برتقال", "emoji": "🍊"},
+            {"text": "باذنجان", "emoji": "🍆"},
+            {"text": "تفاحة", "emoji": "🍎"},
+            {"text": "بطيخ", "emoji": "🍉"},
+            {"text": "ليمون", "emoji": "🍋"},
+            {"text": "طماطم", "emoji": "🍅"}
+          ]
+        },
+        {
+          "id": "l2",
+          "title": "مواصلات",
+          "emoji": "🚗",
+          "mode": "loose",
+          "types": ["copy", "complete", "choose", "arrange", "see_write"],
+          "items": [
+            {"text": "سيارة", "emoji": "🚗"},
+            {"text": "طائرة", "emoji": "✈️"},
+            {"text": "قطار", "emoji": "🚆"},
+            {"text": "دراجة", "emoji": "🚲"},
+            {"text": "سفينة", "emoji": "🚢"},
+            {"text": "حافلة", "emoji": "🚌"}
+          ]
+        },
+        {
+          "id": "l3",
+          "title": "حيوانات أكبر",
+          "emoji": "🐴",
+          "mode": "loose",
+          "types": ["complete", "see_write", "choose", "arrange", "listen_write"],
+          "items": [
+            {"text": "حصان", "emoji": "🐴"},
+            {"text": "زرافة", "emoji": "🦒"},
+            {"text": "دجاجة", "emoji": "🐔"},
+            {"text": "فراشة", "emoji": "🦋"},
+            {"text": "أرنب", "emoji": "🐇"},
+            {"text": "بقرة", "emoji": "🐄"}
+          ]
+        },
+        {
+          "id": "l4",
+          "title": "أشياء في البيت",
+          "emoji": "🔑",
+          "mode": "loose",
+          "types": ["see_write", "complete", "choose", "arrange", "listen_write"],
+          "items": [
+            {"text": "كتاب", "emoji": "📖"},
+            {"text": "مفتاح", "emoji": "🔑"},
+            {"text": "ساعة", "emoji": "⌚"},
+            {"text": "شجرة", "emoji": "🌳"},
+            {"text": "نظارة", "emoji": "👓"},
+            {"text": "هاتف", "emoji": "📱"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": "جمل قصيرة",
+      "emoji": "💬",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "تحيّات",
+          "emoji": "👋",
+          "mode": "loose",
+          "types": ["copy", "arrange", "choose", "listen_write"],
+          "items": [
+            {"text": "السلام عليكم", "emoji": "👋"},
+            {"text": "صباح الخير", "emoji": "🌅"},
+            {"text": "مساء الخير", "emoji": "🌙"},
+            {
+              "text": "شكرا لك",
+              "emoji": "🙏",
+              "accept": ["شكراً لك"]
+            },
+            {"text": "الحمد لله", "emoji": "🤲"}
+          ]
+        },
+        {
+          "id": "l2",
+          "title": "جمل وصفية",
+          "emoji": "🐱",
+          "mode": "loose",
+          "types": ["copy", "arrange", "choose", "listen_write"],
+          "items": [
+            {"text": "القط صغير", "emoji": "🐱"},
+            {"text": "البيت كبير", "emoji": "🏠"},
+            {"text": "الماء بارد", "emoji": "🧊"},
+            {"text": "الشمس حارة", "emoji": "☀️"},
+            {"text": "أنا بخير", "emoji": "😊"}
+          ]
+        }
+      ]
+    }
+  ]
+}

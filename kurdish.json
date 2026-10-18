@@ -1,0 +1,206 @@
+{
+  "id": "kurdish",
+  "title": "کوردی",
+  "subtitle": "بادینی",
+  "emoji": "☀️",
+  "color": "#B85C00",
+  "lang": "ku",
+  "note": "كل الكلمات عليها TODO للمراجعة. ضع التسجيلات في public/audio/kurdish/ واكتب المسار في حقل audio.",
+  "instructions": {
+    "letter": {"text": "ڤێ تیپێ بنڤیسە", "say": "اكتب هذا الحرف", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+    "copy": {"text": "ڤێ پەیڤێ بنڤیسە", "say": "اكتب هذه الكلمة", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+    "see_write": {"text": "ئەڤە چییە؟ بنڤیسە", "say": "ما هذا؟ اكتب اسمه", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+    "listen_write": {"text": "گوهداری بکە و بنڤیسە", "say": "اسمع واكتب", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+    "complete": {"text": "تیپا کێم بنڤیسە", "say": "اكتب الحرف الناقص", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+    "choose": {"text": "گوهداری بکە و هەلبژێرە", "say": "اسمع واختر الصحيح", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+    "arrange": {"text": "تیپان ڕێک بێخە", "say": "رتّب الحروف", "audio": null, "todo": "TODO: راجع الكتابة والصوت"}
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": "تیپ",
+      "emoji": "🔤",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "ئ ا ب پ ت ج چ ح خ",
+          "emoji": "پ",
+          "mode": "loose",
+          "types": ["letter", "letter", "choose", "listen_write"],
+          "items": [
+            {"text": "ئ", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ا", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ب", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "پ", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ت", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ج", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "چ", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ح", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "خ", "audio": null, "todo": "TODO: راجع الكتابة والصوت"}
+          ]
+        },
+        {
+          "id": "l2",
+          "title": "د ر ڕ ز ژ س ش ع غ",
+          "emoji": "ژ",
+          "mode": "loose",
+          "types": ["letter", "letter", "choose", "listen_write"],
+          "items": [
+            {"text": "د", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ر", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ڕ", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ز", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ژ", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "س", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ش", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ع", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "غ", "audio": null, "todo": "TODO: راجع الكتابة والصوت"}
+          ]
+        },
+        {
+          "id": "l3",
+          "title": "ف ڤ ق ک گ ل ڵ م ن",
+          "emoji": "ڤ",
+          "mode": "loose",
+          "types": ["letter", "letter", "choose", "listen_write"],
+          "items": [
+            {"text": "ف", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ڤ", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ق", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ک", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "گ", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ل", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ڵ", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "م", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ن", "audio": null, "todo": "TODO: راجع الكتابة والصوت"}
+          ]
+        },
+        {
+          "id": "l4",
+          "title": "ه ە و ۆ ی ێ",
+          "emoji": "ێ",
+          "mode": "loose",
+          "types": ["letter", "letter", "choose", "listen_write"],
+          "items": [
+            {"text": "ه", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ە", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "و", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ۆ", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ی", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ێ", "audio": null, "todo": "TODO: راجع الكتابة والصوت"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "پەیڤێن کورت",
+      "emoji": "🐱",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "گیانەوەر",
+          "emoji": "🐱",
+          "mode": "loose",
+          "types": ["copy", "choose", "copy", "complete"],
+          "items": [
+            {"text": "پشیک", "emoji": "🐱", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "شێر", "emoji": "🦁", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "سە", "emoji": "🐕", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "هەسپ", "emoji": "🐴", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ماسی", "emoji": "🐟", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "گا", "emoji": "🐂", "audio": null, "todo": "TODO: راجع الكتابة والصوت"}
+          ]
+        },
+        {
+          "id": "l2",
+          "title": "سروشت",
+          "emoji": "☀️",
+          "mode": "loose",
+          "types": ["copy", "complete", "choose", "arrange"],
+          "items": [
+            {"text": "رۆژ", "emoji": "☀️", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "هەیڤ", "emoji": "🌙", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ئاڤ", "emoji": "💧", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "دار", "emoji": "🌳", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "گول", "emoji": "🌹", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "بەفر", "emoji": "❄️", "audio": null, "todo": "TODO: راجع الكتابة والصوت"}
+          ]
+        },
+        {
+          "id": "l3",
+          "title": "لەش و مال",
+          "emoji": "✋",
+          "mode": "loose",
+          "types": ["copy", "complete", "see_write", "choose", "arrange"],
+          "items": [
+            {"text": "دەست", "emoji": "✋", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "چاڤ", "emoji": "👁️", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "مال", "emoji": "🏠", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "دەرگەه", "emoji": "🚪", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "نان", "emoji": "🍞", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "شیر", "emoji": "🥛", "audio": null, "todo": "TODO: راجع الكتابة والصوت"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "پەیڤێن درێژتر",
+      "emoji": "🍊",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "فێقی و زەرزەوات",
+          "emoji": "🍊",
+          "mode": "loose",
+          "types": ["copy", "complete", "choose", "arrange", "see_write"],
+          "items": [
+            {"text": "سێڤ", "emoji": "🍎", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ترێ", "emoji": "🍇", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "پرتەقال", "emoji": "🍊", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "تەماتە", "emoji": "🍅", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "پەتاتە", "emoji": "🥔", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "هێک", "emoji": "🥚", "audio": null, "todo": "TODO: راجع الكتابة والصوت"}
+          ]
+        },
+        {
+          "id": "l2",
+          "title": "تشت",
+          "emoji": "✏️",
+          "mode": "loose",
+          "types": ["complete", "see_write", "choose", "arrange", "listen_write"],
+          "items": [
+            {"text": "قەلەم", "emoji": "✏️", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "کراس", "emoji": "👕", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "باران", "emoji": "🌧️", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "چیا", "emoji": "⛰️", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "کەڤۆک", "emoji": "🕊️", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "مریشک", "emoji": "🐔", "audio": null, "todo": "TODO: راجع الكتابة والصوت"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": "سلاڤ و ڕستە",
+      "emoji": "👋",
+      "lessons": [
+        {
+          "id": "l1",
+          "title": "سلاڤ",
+          "emoji": "👋",
+          "mode": "loose",
+          "types": ["copy", "arrange", "choose", "listen_write"],
+          "items": [
+            {"text": "سلاڤ", "emoji": "👋", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "سپاس", "emoji": "🙏", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "رۆژباش", "emoji": "🌅", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "شەڤباش", "emoji": "🌙", "audio": null, "todo": "TODO: راجع الكتابة والصوت"},
+            {"text": "ئەز باشم", "emoji": "😊", "audio": null, "todo": "TODO: راجع الكتابة والصوت"}
+          ]
+        }
+      ]
+    }
+  ]
+}

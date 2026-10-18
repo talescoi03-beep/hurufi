@@ -1,0 +1,4 @@
+{
+  "app": "حروفي",
+  "courses": ["arabic.json", "kurdish.json", "quran.json"]
+}
